@@ -1,2 +1,2 @@
 # Application Modeller Conversion Tool
-This utility allows developers to make bulk changes to a objects to convert from one application model to another e.g. Internet Explorer to Chromium.
+The Blue Prism Application Modeller Conversion Tool has been designed to allow quick conversion of application modeller elements and attributes. The principal audience for this utility is those wishing to convert Internet Explorer objects to Chrome, Firefox or Edge Chromium browsers, but it also has the scope to support customized conversions between other application modes.
