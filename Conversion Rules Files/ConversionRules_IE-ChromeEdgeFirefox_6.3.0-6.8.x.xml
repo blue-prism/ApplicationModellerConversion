@@ -554,6 +554,16 @@
           <fromAction>HTMLInsertJavascriptFragment</fromAction>
           <toAction>WebInjectJavascript</toAction>
         </Action>
+        <Action>
+          <fromAction>HTMLNavigate</fromAction>
+          <toAction>WebNavigate</toAction>
+          <ArgumentIds>
+            <ArgumentId>
+              <fromArgumentId>NewText</fromArgumentId>
+              <toArgumentId>newtext</toArgumentId>
+            </ArgumentId>
+          </ArgumentIds>
+        </Action>
       </Actions>
       <ReadActions>
         <ReadAction>

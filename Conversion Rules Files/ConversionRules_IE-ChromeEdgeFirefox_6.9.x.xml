@@ -778,6 +778,20 @@
             <Argument>trackingid</Argument>
           </toActionArguments>
         </Action>
+        <Action>
+          <fromAction>HTMLNavigate</fromAction>
+          <toAction>WebNavigate</toAction>
+          <ArgumentIds>
+            <ArgumentId>
+              <fromArgumentId>NewText</fromArgumentId>
+              <toArgumentId>newtext</toArgumentId>
+            </ArgumentId>
+          </ArgumentIds>
+          <toActionArguments>
+			<Argument>newtext</Argument>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
       </Actions>
       <ReadActions>
         <ReadAction>
