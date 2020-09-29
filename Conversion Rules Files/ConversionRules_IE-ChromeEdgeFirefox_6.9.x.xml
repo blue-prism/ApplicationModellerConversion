@@ -788,7 +788,7 @@
             </ArgumentId>
           </ArgumentIds>
           <toActionArguments>
-			<Argument>newtext</Argument>
+            <Argument>newtext</Argument>
             <Argument>trackingid</Argument>
           </toActionArguments>
         </Action>
@@ -849,7 +849,10 @@
         </Action>
         <Action>
           <fromAction>DetachApplication</fromAction>
-          <toAction>DetachApplication</toAction>
+          <toAction>WebDetachApplication</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
         </Action>
         <Action>
           <fromAction>SendKeyEvents</fromAction>
