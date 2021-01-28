@@ -225,7 +225,7 @@
       <Conditions>
         <Condition>
           <fromCondition>CheckExists</fromCondition>
-          <toCondition>CheckExists</toCondition>
+          <toCondition>WebCheckExists</toCondition>
           <toActionArguments>
             <Argument>trackingid</Argument>
           </toActionArguments>
@@ -306,7 +306,7 @@
       <Conditions>
         <Condition>
           <fromCondition>CheckExists</fromCondition>
-          <toCondition>CheckExists</toCondition>
+          <toCondition>WebCheckExists</toCondition>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
@@ -384,7 +384,7 @@
       <Conditions>
         <Condition>
           <fromCondition>CheckExists</fromCondition>
-          <toCondition>CheckExists</toCondition>
+          <toCondition>WebCheckExists</toCondition>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
@@ -462,7 +462,7 @@
       <Conditions>
         <Condition>
           <fromCondition>CheckExists</fromCondition>
-          <toCondition>CheckExists</toCondition>
+          <toCondition>WebCheckExists</toCondition>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
@@ -547,7 +547,7 @@
       <Conditions>
         <Condition>
           <fromCondition>CheckExists</fromCondition>
-          <toCondition>CheckExists</toCondition>
+          <toCondition>WebCheckExists</toCondition>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
@@ -646,7 +646,7 @@
       <Conditions>
         <Condition>
           <fromCondition>CheckExists</fromCondition>
-          <toCondition>CheckExists</toCondition>
+          <toCondition>WebCheckExists</toCondition>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
@@ -724,7 +724,7 @@
       <Conditions>
         <Condition>
           <fromCondition>CheckExists</fromCondition>
-          <toCondition>CheckExists</toCondition>
+          <toCondition>WebCheckExists</toCondition>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
