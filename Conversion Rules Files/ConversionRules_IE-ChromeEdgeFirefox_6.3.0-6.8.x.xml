@@ -474,7 +474,7 @@
     </Element>
     <Element>
       <fromElement>HTMLEdit</fromElement>
-      <toElement>WebText</toElement>
+      <toElement>WebTextEdit</toElement>
       <Conditions>
         <Condition>
           <fromCondition>CheckExists</fromCondition>
