@@ -52,7 +52,7 @@ The AA Role to UIA Control Type is defined by the mapping found in [this](https:
 * There exist 3 mappings possible for AA role **ROLE_SYSTEM_LIST**, **DataGrid**, **Header** and **List**. **List** is currently set as the target UIA Control Type. Changes can be made in the plugin source code to have a different mapping set if needed. Once it is done, you must replace existing **BPAMConversionToolPlugin.dll** with the newly compiled file.
 * There exist 2 mappings possible for AA role **ROLE_SYSTEM_LISTITEM**, **DataItem** and **ListItem**. **ListItem** is currently set as the target UIA Control Type. Changes can be made in the plugin source code to have a different mapping set if needed. Once it is done, you must replace existing **BPAMConversionToolPlugin.dll** with the newly compiled file.
 
-It is observed that AA spied objects will have parent level object selected by default. This means many AA spied objects may contain a large of parent level object attributes. There exist mappings from an AA parent to UIA parent however a decision has been made to drop such mapppings altogether as:
-* Blue Prism spied UIA objects do not usually utilise any of the parent attributes. 
-* Including the parent level attributes may even compromise the success of spying.
+It is observed that AA spied objects will have parent level object selected by default. This means many AA spied objects may contain a large number of parent level object attributes. There exist mappings from an AA parent to UIA parent however a decision has been made to drop such mapppings altogether as:
+* Blue Prism spied UIA objects do not usually utilise any of the parent level attributes. 
+* Including the parent level attributes in UIA elements may result in no matching elements found.
 That being said, changes may be made the conversion rules file to enable this mapping if needed.
