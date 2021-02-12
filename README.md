@@ -3,7 +3,7 @@ The Blue Prism Application Modeller Conversion Tool has been designed to allow q
 
 The current version of the application is **v1.1.0**.
 
-You may wish to read [this blog article]("https://community.blueprism.com/blogs/bruce-liu1/2020/09/20/accelerating-your-migration-away-from-the-internet?CommunityKey=1e516cfe-4d1f-4de9-a9eb-58d15bf38c81")  to understand the background why this application was created in the first place, and things you should be aware of.
+You may wish to read [this blog article](https://community.blueprism.com/blogs/bruce-liu1/2020/09/20/accelerating-your-migration-away-from-the-internet?CommunityKey=1e516cfe-4d1f-4de9-a9eb-58d15bf38c81)  to understand the background why this application was created in the first place, and things you should be aware of.
 
 ## Factors that May Impact the Conversion Outcome
 
@@ -12,7 +12,7 @@ You may wish to read [this blog article]("https://community.blueprism.com/blogs/
 * Developer Choices
 * Predefined Conversion Rules Files
 
-We are more than happy to hear your suggestions on how we can improve the application and the conversion rules files that have been created with the tool. You may use [Blue Prism Community]("https://community.blueprism.com/home") to make us aware of it.
+We are more than happy to hear your suggestions on how we can improve the application and the conversion rules files that have been created with the tool. You may use [Blue Prism Community](https://community.blueprism.com/home) to make us aware of it.
 
 ## Conversion Rules Files Catalogue
 
@@ -40,7 +40,7 @@ The AA to UIA conversion is only possible with an updated version of the plugin 
 
 This conversion rule file only supports conversion of elements spied using AA mode to UIA mode when the Blue Prism object or objects found in the release are in Chrome/Edge/Firefox mode, i.e. *BrowserAttach* or *BrowserLaunch*. To prepare an Internet Explorer (IE) object with AA elements for conversion, i.e. apptypeinfo > id is either *HTMLAttach* or *HTMLLaunch*, please firstly convert the object or release into Chrome/Edge/Firefox mode. To do so, you may use one of conversion rules files prefixed with "ConversionRules_IE-ChromeEdgeFirefox_", please kindly pick one such file that is most appropriate for your Blue Prism version. Once you have the object or release in the right mode, then convert it using AA to UIA conversion rule files that are prefixed with "ConversionRules_AA-UIA_".
 
-UIA elements may be slow for large and complex web pages. If you are thinking of converting from IE based AA elements to Chrome/Edge/Firefox based UIA elements, you may wish to respy such elements in Chrome/Edge/Firefox browser modes using CSS Selector and XPath Selector technique. To gain further understanding of this technique, please consider [this Blue Prism University course]("https://university.blueprism.com/learn/course/16924/Spying%2520Using%2520CSS%2520Selector%2520and%2520Xpath").
+UIA elements may be slow for large and complex web pages. If you are thinking of converting from IE based AA elements to Chrome/Edge/Firefox based UIA elements, you may wish to respy such elements in Chrome/Edge/Firefox browser modes using CSS Selector and XPath Selector technique. To gain further understanding of this technique, please consider [this Blue Prism University course](https://university.blueprism.com/learn/course/16924/Spying%2520Using%2520CSS%2520Selector%2520and%2520Xpath).
 
 #### Notes on AA to UIA Conversion Logic
 The AA Role to UIA Control Type is defined by the mapping found in [this](https://docs.microsoft.com/en-us/windows/win32/winauto/uiauto-msaa#:~:text=Microsoft%20Active%20Accessibility%20is%20the,products%20and%20automated%20testing%20tools) article from Microsoft. The mapping is implemented with some exceptions as detailed below:
