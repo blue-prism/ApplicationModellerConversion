@@ -16,23 +16,23 @@ We are more than happy to hear your suggestions on how we can improve the applic
 
 ## Conversion Rules Files Catalogue
 
-### ConversionRules_ChromeEdgeFirefox_6.3.0-6.8.x.xml
+### [ConversionRules_ChromeEdgeFirefox_6.3.0-6.8.x.xml](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_ChromeEdgeFirefox_6.3.0-6.8.x.xml)
 For conversion of Blue Prism objects created using Chrome/Edge/Firefox mode to Chrome/Edge/Firefox mode, e.g. conversion from Chrome to Edge. This conversion rules file supports Blue Prism versions from 6.3.0 to 6.8.x.
 
 Note, object name conversion is not performed.
 
-### ConversionRules_ChromeEdgeFirefox_6.9.x.xml
+### [ConversionRules_ChromeEdgeFirefox_6.9.x.xml](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_ChromeEdgeFirefox_6.9.x.xml)
 For conversion of Blue Prism objects created using Chrome/Edge/Firefox mode to Chrome/Edge/Firefox mode, e.g. conversion from Chrome to Edge. This conversion rules file supports Blue Prism versions from 6.9.x onwards, including **v6.10**. 
 
 Note, object name conversion is not performed.
 
-### ConversionRules_IE-ChromeEdgeFirefox_6.3.0-6.8.x.xml
+### [ConversionRules_IE-ChromeEdgeFirefox_6.3.0-6.8.x.xml](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_IE-ChromeEdgeFirefox_6.3.0-6.8.x.xml)
 For conversion of Blue Prism objects created using Internet Explorer mode to Chrome/Edge/Firefox modes. This conversion rules file supports Blue Prism versions from 6.3.0 to 6.8.x.
 
-### ConversionRules_IE-ChromeEdgeFirefox_6.9.x.xml
+### [ConversionRules_IE-ChromeEdgeFirefox_6.9.x.xml](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_IE-ChromeEdgeFirefox_6.9.x.xml)
 For conversion of Blue Prism objects created using Internet Explorer mode to Chrome/Edge/Firefox modes. This conversion rules file supports Blue Prism versions from 6.9.x onwards, including **v6.10**.
 
-### ConversionRules_AA-UIA_6.x.x.xml
+### [ConversionRules_AA-UIA_6.x.x.xml](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_AA-UIA_6.x.x.xml)
 For conversion of Blue Prism objects from Active Accessibility (AA) to UI Automation (UIA). Such objects or release must have gone through conversion into Chrome/Edge/Firefox mode. This conversion rules file supports all Blue Prism v6.x.x versions. For more details please see below.
 
 #### Notes on Active Accessibility (AA) to UI Automation (UIA) Conversion Usage
