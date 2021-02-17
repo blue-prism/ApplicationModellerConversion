@@ -18,7 +18,7 @@ We are more than happy to hear your suggestions on how we can improve the applic
 
 ## Conversion Rules Files Catalogue
 
-### [ConversionRules_ChromeEdgeFirefox_ExecutablePathChangeOnly_6.x.xml](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_ChromeEdgeFirefox_ExecutablePathChangeOnly.xml)
+### [ConversionRules_ChromeEdgeFirefox_ExecutablePathChangeOnly_6.x.xml](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_ChromeEdgeFirefox_ExecutablePathChangeOnly_6.x.xml)
 For conversion of Blue Prism objects created using Chrome/Edge/Firefox mode to Chrome/Edge/Firefox mode, e.g. conversion from Chrome to Edge. This conversion rules file only applies **browser executable path change only**, but the objects must already been in one of the Chrome/Edge/Firefox modes. This works for all v6.x versions.
 
 ### [ConversionRules_IE-ChromeEdgeFirefox_6.3.0-6.8.x.xml](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_IE-ChromeEdgeFirefox_6.3.0-6.8.x.xml)
