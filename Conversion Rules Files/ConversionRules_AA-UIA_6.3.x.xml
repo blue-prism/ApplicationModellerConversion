@@ -1,4 +1,4 @@
-﻿<ConversionRules Name="AA to UIA Browser Mode Conversion Rules" BPVersion="6.x.x" ObjectNameSuffix="">
+﻿<ConversionRules Name="AA to UIA Browser Mode Conversion Rules" BPVersion="6.3.x or above" ObjectNameSuffix="">
   <AppTypeInfoConversionRules>
     <IDs>
       <ID>
