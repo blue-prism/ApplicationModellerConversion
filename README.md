@@ -7,6 +7,8 @@ You may wish to read [this blog article](https://community.blueprism.com/blogs/b
 
 User Guide can be found at [here](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Blue%20Prism%20User%20Guide%20-%20Application%20Modeller%20Conversion%20Tool.pdf). It is highly recommended that you read it carefully before commencing working with the tool.
 
+Change Log has been created and will be updated from 25 Feb 2021. It can be found [here](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/CHANGELOG.md)
+
 ## Factors that May Impact the Conversion Outcome
 
 * Browsers Do Behave Differently
@@ -37,7 +39,7 @@ This conversion rule file only supports conversion of elements from AA to UIA wh
 
 To prepare an Internet Explorer (IE) object with AA elements for conversion, i.e. apptypeinfo > id is either *HTMLAttach* or *HTMLLaunch*, please firstly convert the object or release into Chrome/Edge/Firefox. You may use one of the conversion rules files prefixed with "ConversionRules_IE-ChromeEdgeFirefox_" to achieve this, please kindly pick one such file that is most appropriate for your Blue Prism version. Once you have managed to obtain the converted object or release file, you can then use it with this conversion rule file in a 2nd pass to convert those AA elements into UIA.
 
-It is important to note that UIA elements are often slower for large and complex web pages, potentially slower than those spied using AA. If you are considering converting from IE based AA elements to Chrome/Edge/Firefox based UIA elements, you may wish to respy such elements in Chrome/Edge/Firefox browser modes using CSS Selector and XPath Selector technique to get the best performance. To gain further understanding of this technique, please consider [this Blue Prism University course](https://university.blueprism.com/learn/course/16924/Spying%2520Using%2520CSS%2520Selector%2520and%2520Xpath).
+It is important to note that UIA elements are often slower for large and complex web pages, potentially slower than those spied using AA. If you are considering converting from IE based AA elements to Chrome/Edge/Firefox based UIA elements, you may wish to respy such elements in Chrome/Edge/Firefox browser modes using CSS Selector/XPath Selector technique to get the best performance. To gain further understanding of this technique, please consider [this Blue Prism University course](https://university.blueprism.com/learn/course/16924/Spying%2520Using%2520CSS%2520Selector%2520and%2520Xpath).
 
 #### Notes on AA to UIA Conversion Logic
 The key to success is the conversion between AA Role and UIA Control Type.
