@@ -1,6 +1,4 @@
 # Blue Prism Application Modeller Conversion Tool
-[TOC]
-
 The Blue Prism Application Modeller Conversion Tool has been designed to allow quick conversion of application modeller elements and attributes. The principal audience for this utility is those wishing to convert objects from Internet Explorer to Chrome, Firefox or Edge Chromium browsers, but it also has the scope to support customized conversions between other application modes.
 
 The current version of the application is [**v1.2.0**]((https://github.com/blue-prism/ApplicationModellerConversion/blob/master/BP_AM_Converter.zip)) (published on 04 March 2021). It is recommended that existing users of all previous versions to upgrade to this version. You may find latest changes [here](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/CHANGELOG.md).

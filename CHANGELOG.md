@@ -2,8 +2,6 @@
 
 All notable changes to this project will be documented in this file, from 25 Feb 2021
 
-[TOC]
-
 ## Changes made on 04 Mar 2021
 
 ### Core Application
@@ -34,7 +32,7 @@ The following changes have been made to conversion rules file rom IE to Chrome/E
 - Not implemented but possible to achieve using new Function feature:
   - Ability to append "--force-renderer-accessibility" to a Navigate stage implementing *Launch* action.
   - Ability to replace for example "iexplore" with "chrome"  in an Navigate stage implementing *Attach* action.
-- Added *trackingid* to all conditions. This is optional but good for consistency.
+- Added *trackingid* to all conditions for 6.9.x. This is optional but good for consistency.
 - Added new rule to map Document Loaded [DocumentLoaded] condition so that:
   - For 6.9.0 or above, mapped to *Parent Document Loaded [WebCheckParentDocumentLoaded]*. Note that this is **not an exact match** but should largely do the job.
   - For 6.3.0 - 6.8.x, mapped to *Check Exists [CheckExists]*. Note that this is **not an exact match** but *Check Exists* is the only option available for those Blue Prism versions.
