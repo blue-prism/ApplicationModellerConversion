@@ -224,6 +224,14 @@
 					<fromCondition>CheckExists</fromCondition>
 					<toCondition>CheckExists</toCondition>
 				</Condition>
+				<Condition>
+					<fromCondition>DocumentLoaded</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
+				<Condition>
+					<fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
 			</Conditions>
 			<Actions>
 				<Action>
@@ -247,6 +255,7 @@
 				<ReadAction>
 					<fromReadAction>ReadCurrentValue</fromReadAction>
 					<toReadAction>WebGetText</toReadAction>
+					<Function>SetText</Function>
 				</ReadAction>
 				<ReadAction>
 					<fromReadAction>HTMLGetPath</fromReadAction>
@@ -255,12 +264,7 @@
 				<ReadAction>
 					<fromReadAction>GetHTMLIdentifier</fromReadAction>
 					<toReadAction>WebGetAttribute</toReadAction>
-					<ArgumentIds>
-						<ArgumentId>
-							<fromArgumentId>idname</fromArgumentId>
-							<toArgumentId>propname</toArgumentId>
-						</ArgumentId>
-					</ArgumentIds>
+					<Function>SetAttribute</Function>
 				</ReadAction>
 			</ReadActions>
 		</Element>
@@ -272,8 +276,21 @@
 					<fromCondition>CheckExists</fromCondition>
 					<toCondition>CheckExists</toCondition>
 				</Condition>
+				<Condition>
+					<fromCondition>DocumentLoaded</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
+				<Condition>
+					<fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
 			</Conditions>
 			<Actions>
+				<Action>
+					<fromAction>SetChecked</fromAction>
+					<toAction>WebSetAttribute</toAction>
+					<Function>SetChecked</Function>
+				</Action>
 				<Action>
 					<fromAction>HTMLClickCentre</fromAction>
 					<toAction>WebClick</toAction>
@@ -295,6 +312,7 @@
 				<ReadAction>
 					<fromReadAction>ReadCurrentValue</fromReadAction>
 					<toReadAction>WebGetText</toReadAction>
+					<Function>SetText</Function>
 				</ReadAction>
 				<ReadAction>
 					<fromReadAction>HTMLGetPath</fromReadAction>
@@ -303,12 +321,7 @@
 				<ReadAction>
 					<fromReadAction>GetHTMLIdentifier</fromReadAction>
 					<toReadAction>WebGetAttribute</toReadAction>
-					<ArgumentIds>
-						<ArgumentId>
-							<fromArgumentId>idname</fromArgumentId>
-							<toArgumentId>propname</toArgumentId>
-						</ArgumentId>
-					</ArgumentIds>
+					<Function>SetAttribute</Function>
 				</ReadAction>
 			</ReadActions>
 		</Element>
@@ -320,8 +333,21 @@
 					<fromCondition>CheckExists</fromCondition>
 					<toCondition>CheckExists</toCondition>
 				</Condition>
+				<Condition>
+					<fromCondition>DocumentLoaded</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
+				<Condition>
+					<fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
 			</Conditions>
 			<Actions>
+				<Action>
+					<fromAction>SetChecked</fromAction>
+					<toAction>WebCheckRadio</toAction>
+					<Function>SetRadioChecked</Function>
+				</Action>
 				<Action>
 					<fromAction>HTMLClickCentre</fromAction>
 					<toAction>WebClick</toAction>
@@ -343,6 +369,7 @@
 				<ReadAction>
 					<fromReadAction>ReadCurrentValue</fromReadAction>
 					<toReadAction>WebGetText</toReadAction>
+					<Function>SetText</Function>
 				</ReadAction>
 				<ReadAction>
 					<fromReadAction>HTMLGetPath</fromReadAction>
@@ -351,12 +378,7 @@
 				<ReadAction>
 					<fromReadAction>GetHTMLIdentifier</fromReadAction>
 					<toReadAction>WebGetAttribute</toReadAction>
-					<ArgumentIds>
-						<ArgumentId>
-							<fromArgumentId>idname</fromArgumentId>
-							<toArgumentId>propname</toArgumentId>
-						</ArgumentId>
-					</ArgumentIds>
+					<Function>SetAttribute</Function>
 				</ReadAction>
 			</ReadActions>
 		</Element>
@@ -366,6 +388,14 @@
 			<Conditions>
 				<Condition>
 					<fromCondition>CheckExists</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
+				<Condition>
+					<fromCondition>DocumentLoaded</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
+				<Condition>
+					<fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
 					<toCondition>CheckExists</toCondition>
 				</Condition>
 			</Conditions>
@@ -391,6 +421,7 @@
 				<ReadAction>
 					<fromReadAction>ReadCurrentValue</fromReadAction>
 					<toReadAction>WebGetText</toReadAction>
+					<Function>SetText</Function>
 				</ReadAction>
 				<ReadAction>
 					<fromReadAction>HTMLGetPath</fromReadAction>
@@ -403,12 +434,7 @@
 				<ReadAction>
 					<fromReadAction>GetHTMLIdentifier</fromReadAction>
 					<toReadAction>WebGetAttribute</toReadAction>
-					<ArgumentIds>
-						<ArgumentId>
-							<fromArgumentId>idname</fromArgumentId>
-							<toArgumentId>propname</toArgumentId>
-						</ArgumentId>
-					</ArgumentIds>
+					<Function>SetAttribute</Function>
 				</ReadAction>
 			</ReadActions>
 		</Element>
@@ -420,6 +446,14 @@
 					<fromCondition>CheckExists</fromCondition>
 					<toCondition>CheckExists</toCondition>
 				</Condition>
+				<Condition>
+					<fromCondition>DocumentLoaded</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
+				<Condition>
+					<fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
 			</Conditions>
 			<Actions>
 				<Action>
@@ -429,20 +463,7 @@
 				<Action>
 					<fromAction>HTMLSelectItem</fromAction>
 					<toAction>WebSelectListItem</toAction>
-					<ArgumentIds>
-						<ArgumentId>
-							<fromArgumentId>newtext</fromArgumentId>
-							<toArgumentId>itemtext</toArgumentId>
-						</ArgumentId>
-						<ArgumentId>
-							<fromArgumentId>position</fromArgumentId>
-							<toArgumentId>itemindex</toArgumentId>
-						</ArgumentId>
-					</ArgumentIds>
-					<toActionArguments>
-						<Argument>itemtext</Argument>
-						<Argument>itemindex</Argument>
-					</toActionArguments>
+					<Function>SelectItem</Function>
 				</Action>
 				<Action>
 					<fromAction>HTMLDoubleClickCentre</fromAction>
@@ -461,13 +482,14 @@
 				<ReadAction>
 					<fromReadAction>ReadCurrentValue</fromReadAction>
 					<toReadAction>WebGetText</toReadAction>
+					<Function>SetText</Function>
 				</ReadAction>
 				<ReadAction>
 					<fromReadAction>HTMLGetPath</fromReadAction>
 					<toReadAction>WebGetPath</toReadAction>
 				</ReadAction>
 				<ReadAction>
-					<fromReadAction>GetAllItems</fromReadAction>
+					<fromReadAction>HTMLGetAllItems</fromReadAction>
 					<toReadAction>WebGetItems</toReadAction>
 				</ReadAction>
 				<ReadAction>
@@ -481,12 +503,7 @@
 				<ReadAction>
 					<fromReadAction>GetHTMLIdentifier</fromReadAction>
 					<toReadAction>WebGetAttribute</toReadAction>
-					<ArgumentIds>
-						<ArgumentId>
-							<fromArgumentId>idname</fromArgumentId>
-							<toArgumentId>propname</toArgumentId>
-						</ArgumentId>
-					</ArgumentIds>
+					<Function>SetAttribute</Function>
 				</ReadAction>
 			</ReadActions>
 		</Element>
@@ -496,6 +513,14 @@
 			<Conditions>
 				<Condition>
 					<fromCondition>CheckExists</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
+				<Condition>
+					<fromCondition>DocumentLoaded</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
+				<Condition>
+					<fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
 					<toCondition>CheckExists</toCondition>
 				</Condition>
 			</Conditions>
@@ -521,6 +546,7 @@
 				<ReadAction>
 					<fromReadAction>ReadCurrentValue</fromReadAction>
 					<toReadAction>WebGetText</toReadAction>
+					<Function>SetText</Function>
 				</ReadAction>
 				<ReadAction>
 					<fromReadAction>HTMLGetPath</fromReadAction>
@@ -529,12 +555,7 @@
 				<ReadAction>
 					<fromReadAction>GetHTMLIdentifier</fromReadAction>
 					<toReadAction>WebGetAttribute</toReadAction>
-					<ArgumentIds>
-						<ArgumentId>
-							<fromArgumentId>idname</fromArgumentId>
-							<toArgumentId>propname</toArgumentId>
-						</ArgumentId>
-					</ArgumentIds>
+					<Function>SetAttribute</Function>
 				</ReadAction>
 			</ReadActions>
 		</Element>
@@ -544,6 +565,14 @@
 			<Conditions>
 				<Condition>
 					<fromCondition>CheckExists</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
+				<Condition>
+					<fromCondition>DocumentLoaded</fromCondition>
+					<toCondition>CheckExists</toCondition>
+				</Condition>
+				<Condition>
+					<fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
 					<toCondition>CheckExists</toCondition>
 				</Condition>
 			</Conditions>
@@ -591,6 +620,7 @@
 				<ReadAction>
 					<fromReadAction>ReadCurrentValue</fromReadAction>
 					<toReadAction>WebGetText</toReadAction>
+					<Function>SetText</Function>
 				</ReadAction>
 				<ReadAction>
 					<fromReadAction>HTMLGetPath</fromReadAction>
@@ -599,12 +629,7 @@
 				<ReadAction>
 					<fromReadAction>GetHTMLIdentifier</fromReadAction>
 					<toReadAction>WebGetAttribute</toReadAction>
-					<ArgumentIds>
-						<ArgumentId>
-							<fromArgumentId>idname</fromArgumentId>
-							<toArgumentId>propname</toArgumentId>
-						</ArgumentId>
-					</ArgumentIds>
+					<Function>SetAttribute</Function>
 				</ReadAction>
 			</ReadActions>
 		</Element>
