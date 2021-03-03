@@ -32,7 +32,7 @@
 
 | Rules                                                        | Remark                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| All *Path* attribute value having multiple HTML tags will be truncated to use the bit from the last **/HTML **text. This is to work with the way how Chrome renders the *Web Path* element for embedded iframe. | This is modelled around the behaviour observed. But doing so does not guarantee that the element will be spyable. |
+| All *Path* attribute having multiple HTML tags found within it will be truncated to start from the last **/HTML**. This is to work with the way how Chrome/Edge/Firefox renders the *Web Path* element for embedded iframe. | This is modelled around the behaviour observed. But doing so does not guarantee that the element will be spyable. |
 | **6.3.0 - 6.8.x:** *Document Loaded [DocumentLoaded] > Check Exists [CheckExists]* | This is not an exact match but these Blue Prism versions only have one condition available, i.e. CheckExists. |
 | **6.3.0 - 6.8.x:** *Parent Document Loaded [HTMLCheckExistsAndDocumentLoaded] > Check Exists [CheckExists]* | This is not an exact match but these Blue Prism versions only have one condition available, i.e. CheckExists. |
 | **6.9.x:** *Document Loaded [DocumentLoaded] > Parent Document Loaded [WebCheckParentDocumentLoaded]* | This is a close match and should largely do the job.         |
