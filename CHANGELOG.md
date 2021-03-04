@@ -26,7 +26,7 @@ The following changes have been made to conversion rules file rom IE to Chrome/E
 - Replaced all instances of *Get HTML Identifier [GetHTMLIdentifier]* action to *Get Attribute [WebGetAttribute]* action with Function *SetAttribute*, for all IE based elements, for all Blue Prism versions.
 - Replaced all instances of *Get Current Value [ReadCurrentValue]* action to *Get Text [WebGetText]* action with Function *SetText*, for all IE based elements, for all Blue Prism versions. 
 - Created a new rule, partially mapped *HTML Check Box [HTMLCheckBox] > Set Checked [SetChecked]* to *Check Box (Web) [WebCheckBox] > Set Attribute [WebSetAttribute]* using Function *SetChecked*, for all Blue Prism versions.
-- Created a new rule, partially mapped *HTML Combo Box [HTMLComboBox] > Set Checked [SetChecked]* to *Radio Button (Web) [WebRadioButton] > Set Checked [WebCheckRadio]* using Function *SetRadioChecked*, for all Blue Prism versions.
+- Created a new rule, partially mapped *HTML Radio Button [HTMLRadioButton] > Set Checked [SetChecked]* to *Radio Button (Web) [WebRadioButton] > Set Checked [WebCheckRadio]* using Function *SetRadioChecked*, for all Blue Prism versions.
 - Created a new rule, mapped *HTML Combo Box [HTMLCombo] > Select Item [HTMLSelectItem]* action to *List (Web) [WebList] > Select List Item [SelectItem]* using Function *SelectItem*, for all Blue Prism versions. 
 - Created a new rule, mapped *Parent Document Loaded [HTMLCheckExistsAndDocumentLoaded]* condition to *Check Exists [CheckExists]* condition, for all IE based elements, for conversion rules files applicable for Blue Prism versions 6.3.0 - 6.8.x.
 - Not implemented but possible to achieve using new Function feature:
@@ -39,9 +39,9 @@ The following changes have been made to conversion rules file rom IE to Chrome/E
 
 #### Bug Fixes
 
-- *HTML Combo Box [HTMLCombo] > Get All Items [HTMLGetAllItems]* had a typo so it was set to [GetAllItems] instead. This has caused rules fail to match intended action id. 
+- *HTML Combo Box [HTMLCombo] > Get All Items [HTMLGetAllItems]* had a typo so it was mapped to *[GetAllItems]* instead. This has caused conversion from *HTML Combo box > Get All Items* not to match any Web Element action. 
 
-### Plugin
+### Plugins
 
 New function to support sophisticated conversion on element action and readaction. Such function takes three arguments:
 
@@ -70,7 +70,7 @@ The following functions have been added to the plugin. For details, please see t
 - Added *SetChecked* function, for HTML Check Box.
   - If *Set Checked [SetChecked]* has a value of True, it is converted to *Set Attribute [WebSetAttribute]*, with attribute value set to "checked".
   - Otherwise no conversion is performed.
-- Added *AttachProcessNameChange* function, which is not implemented by default conversion rules files.
+- Added *AttachProcessNameChange* function, which can be used to modify browser executable name found in Attach stage; this is not implemented by the default conversion rules files.
 
 The following functions have been modified:
 
