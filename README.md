@@ -17,32 +17,32 @@ For all changes made since 25 Feb 2021, see **change log** [here](https://github
 
 ### Browsers Do Behave Differently
 
-Browsers sometimes render the same web page differently. This is especially true for Internet Explorer (IE) and what we consider as modern browsers, e.g., Chrome/Edge/Firefox. It is like web developers must come up with different code to work with different browsers, adjustments are often required to cater for such differences when it comes to conversions. It is not the goal of this tool to attempt work around this limitations. It is one of those external factors that is not within the control of Blue Prism, nor the tool itself.
+Browsers sometimes render the same web page differently. Such differences are especially obvious between Internet Explorer (IE) and what we consider as modern browsers, e.g., Chrome/Edge/Firefox. It is like web developers must come up with different code to work with different browsers, adjustments are often needed to cater for such differences when it comes to conversions. It is not the goal of this tool to attempt work around this limitation. It is one of those external factors that is not within the control of Blue Prism, nor the tool itself.
 
 ### Blue Prism Function Gaps
 
-There exists function gaps between capability of Blue Prism IE mode and the implementation of Chrome/Edge/Firefox browser mode in different Blue Prism versions. For example, version 6.9.0 introduced *Get HTML* as well as *Get Current Value* actions that were not available in version of Blue Prism before that. This means not every action, readaction or condition in IE mode has a perfect match in Chrome/Edge/Firefox mode. The tool has attempted to bridge such gaps as much as possible but there is limitation to what any tool can do in working around them. From the perspective of the tool, 6.3.0 - 6.8.x may receive less functions as compared to 6.9.0 or above.
+There exists function gaps between capability of Blue Prism IE mode and the implementation of Chrome/Edge/Firefox browser mode using different Blue Prism versions. For example, version 6.9.0 introduced *Get HTML* as well as *Get Current Value* actions that were not available in versions of Blue Prism before that. This means not every action, readaction or condition in IE mode has a match in Chrome/Edge/Firefox mode. The tool has attempted to bridge such gaps as much as possible but there is limitation in what any tool can do in situations like this. From the perspective of the tool, 6.3.0 - 6.8.x may receive less conversions as compared to 6.9.0 or above.
 
-The way how Blue Prism Attach/Detach work is also different than IE mode. This may mean developers would need to consider revamping some of the existing code to work with the new versions.
+The way how Blue Prism Attach/Detach work is also different than in IE mode. This may mean developers would need to consider revamping some of the existing code to work with the new versions.
 
-Another important change is the unavailability of Active Accessibility (AA) mode in modern browser modes. This means all objects previously spied in AA for IE, must be replaced by elements spied using another method. UIA is a close match to AA and the tool has indeed offered a conversion rules file to convert from AA to UIA in a 2nd pass once the object has been successfully converted into modern browser modes. More information on AA to UIA conversion can be found in sections below.
+Another important change is the unavailability of Active Accessibility (AA) mode in modern browser modes. This means all objects previously spied in AA for IE, must be replaced by elements spied using another method. UIA is a close match to AA and the tool has indeed offered a conversion rules file to be used in a 2nd pass once the object has been successfully converted into modern browser modes. More information on AA to UIA conversion can be found in AA to UIA sections below.
 
 It is important to know that neither AA nor UIA is the best technology fit for modern web applications that are often complex and dynamic in nature. It would be prudent to consider a different spying technique during the migration process for such web applications so the automation can obtain the best performance possible. For a pure HTML application, modern browser mode is always an option. For versions before 6.9.0, spying using XPath in browser mode is another option to consider. For 6.9.0 onwards, both CSS Selector and XPath are available. To gain further understanding of CSS and XPath technique, please consider [this Blue Prism University course](https://university.blueprism.com/learn/course/16924/Spying%2520Using%2520CSS%2520Selector%2520and%2520Xpath).
 
-It is envisaged that future versions of Blue Prism will continue offering more features to further narrow down known function gaps between IE and Chrome/Edge/Firefox modes. This in turn would see more Blue Prism version specific conversion rules files offered when new Blue Prism releases have become available.
+It is envisaged that future versions of Blue Prism will continue offer more features to further narrow down known function gaps between IE and Chrome/Edge/Firefox modes. This in turn would see more Blue Prism version specific conversion rules files offered when new Blue Prism releases have become available.
 
 ### Developer Choices
 
-Developers may have made some unconscious decisions when developing Blue Prism automations. They were not actively aware of the consequences in relation to migrating the developed code to modern browsers. This determines some code will be converted quite easily while other may not be converted at all. Two distinct areas where such choices may impact the quality of the conversions are:
+Developers may have made some unconscious decisions when developing Blue Prism automations. They might not be actively aware of the consequences of those decisions as such code would be migrated to modern browsers. This determines some code will be converted quite easily while other may not be converted at all. Two distinct areas where such choices may impact the quality of the conversions are:
 
 - Choice of element attributes
 - Choice of actions in fulfilling a specific set of logic
 
 ### Accuracy in Predefined Conversion Rules Files
 
-The quality of the conversion rules files associated with the tool also play an important role. We have been incorporating suggestions made to the tool, as well as bug fixes from the tool launch date so the community will receive most up to date files possible. Version 1.2.0 is a big step up in the response where more fine-grained rule definitions are offered for certain actions or readactions that do not have a 100% match between IE and modern browser modes.
+The quality of the conversion rules files associated with the tool also play an important role. We have been incorporating suggestions made to the rules, as well as implementing various bug fixes from the launch date so the community will receive most up to date rules possible. Version 1.2.0 is a big step up in our response where more fine-grained rule definitions are offered for certain actions or read actions that do not have a 100% match between IE and modern browser modes.
 
-We are more than happy to hear your suggestions on how we can improve the application and the conversion rules files that have been created with the tool. You may use [Blue Prism Community](https://community.blueprism.com/home) to make us aware of it.
+We are more than happy to hear your suggestions on how we can improve the application and the conversion rules files that have been created with the tool. You may use [Blue Prism Digital Exchange Community](https://community.blueprism.com/communities/community-home-prod?CommunityKey=1e516cfe-4d1f-4de9-a9eb-58d15bf38c81) to make us aware of those.
 
 ## Conversion Rules Files Catalogue
 
