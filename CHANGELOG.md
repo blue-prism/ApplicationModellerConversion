@@ -31,7 +31,7 @@ The following changes have been made to conversion rules file rom IE to Chrome/E
 - Created a new rule, mapped *Parent Document Loaded [HTMLCheckExistsAndDocumentLoaded]* condition to *Check Exists [CheckExists]* condition, for all IE based elements, for conversion rules files applicable for Blue Prism versions 6.3.0 - 6.8.x.
 - Not implemented but possible to achieve using new Function feature:
   - Ability to append "--force-renderer-accessibility" to a Navigate stage implementing *Launch* action.
-  - Ability to replace for example "iexplore" with "chrome"  in an Navigate stage implementing *Attach* action.
+  - Ability to replace for example "iexplore" with "chrome" in a Navigate stage implementing *Attach* action.
 - Added *trackingid* to all conditions for 6.9.x. This is optional but good for consistency.
 - Added new rule to map Document Loaded [DocumentLoaded] condition so that:
   - For 6.9.0 or above, mapped to *Parent Document Loaded [WebCheckParentDocumentLoaded]*. Note that this is **not an exact match** but should largely do the job.
@@ -46,12 +46,12 @@ The following changes have been made to conversion rules file rom IE to Chrome/E
 New function to support sophisticated conversion on element action and readaction. Such function takes three arguments:
 
 - arg[0]: existing action/readaction id; the function must return an action/readaction id to succeed. Depending on the use case, existing id may be returned to signal conversion is not possible; alternatively return a new id to map the action to something different.
-- arg[1]: a dictionary of arguments associated with action/reaction to be converted from. The goal is to rewrite the dictionary object so it only contains matching arguments for the action/readaction id set. 
+- arg[1]: a dictionary of arguments associated with the action/reaction to be converted from. The goal is to rewrite the dictionary object so it only contains matching arguments for the to-be action/readaction id. 
   - Unneeded arguments should be removed, new arguments should be added in the process. However, toActionArguments or toReadActionArguments found in the conversion rules file can be used instead to achieve the same purpose.
 
 - arg[2]: a dictionary of element attributes already converted. 
-  - Separate rules may be written to have different behaviour set for different element type. 
-  - For IE to Chrome/Edge/Firefox conversion, use *wCssSelector* attribute, which is only available from v6.9 onwards may be used to distinguish Blue Prism versions. This allows customised rules to be defined for different target Blue Prism versions.
+  - Separate rules may be written to have different behaviours set for different element types. 
+  - For IE to Chrome/Edge/Firefox conversion, may use *wCssSelector* attribute to tell the Blue Prism version to convert to. This allows customised rules to be defined for different target Blue Prism versions.
 
 The following functions have been added to the plugin. For details, please see the plugin source code:
 
@@ -84,7 +84,7 @@ The following functions have been modified:
 
 ### Conversion Rules Files
 
-The following changes have been made to conversion rules file rom IE to Chrome/Edge/Firefox for 6.3.0-6.8.x as well as 6.9.x or above.
+The following changes have been made to conversion rules file from IE to Chrome/Edge/Firefox for 6.3.0-6.8.x, as well as 6.9.x or above.
 
 It is strongly recommended that you update your local conversion rules files.
 
@@ -96,7 +96,3 @@ It is strongly recommended that you update your local conversion rules files.
 ### Plugin
 
 - No change made
-
-  
-
-  
