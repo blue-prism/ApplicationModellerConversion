@@ -261,8 +261,43 @@
           </toActionArguments>
         </Action>
         <Action>
+          <fromAction>HTMLFocus</fromAction>
+          <toAction>WebFocus</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
           <fromAction>Verify</fromAction>
           <toAction>Verify</toAction>
+        </Action>
+        <Action>
+          <fromAction>HTMLInvokeJavascriptMethod</fromAction>
+          <toAction>WebInvokeJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLInsertJavascriptFragment</fromAction>
+          <toAction>WebInjectJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLNavigate</fromAction>
+          <toAction>WebNavigate</toAction>
+          <ArgumentIds>
+            <ArgumentId>
+              <fromArgumentId>NewText</fromArgumentId>
+              <toArgumentId>newtext</toArgumentId>
+            </ArgumentId>
+          </ArgumentIds>
+          <toActionArguments>
+            <Argument>newtext</Argument>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
         </Action>
       </Actions>
       <ReadActions>
@@ -356,8 +391,43 @@
           </toActionArguments>
         </Action>
         <Action>
+          <fromAction>HTMLFocus</fromAction>
+          <toAction>WebFocus</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
           <fromAction>Verify</fromAction>
           <toAction>Verify</toAction>
+        </Action>
+        <Action>
+          <fromAction>HTMLInvokeJavascriptMethod</fromAction>
+          <toAction>WebInvokeJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLInsertJavascriptFragment</fromAction>
+          <toAction>WebInjectJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLNavigate</fromAction>
+          <toAction>WebNavigate</toAction>
+          <ArgumentIds>
+            <ArgumentId>
+              <fromArgumentId>NewText</fromArgumentId>
+              <toArgumentId>newtext</toArgumentId>
+            </ArgumentId>
+          </ArgumentIds>
+          <toActionArguments>
+            <Argument>newtext</Argument>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
         </Action>
       </Actions>
       <ReadActions>
@@ -451,8 +521,43 @@
           </toActionArguments>
         </Action>
         <Action>
+          <fromAction>HTMLFocus</fromAction>
+          <toAction>WebFocus</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
           <fromAction>Verify</fromAction>
           <toAction>Verify</toAction>
+        </Action>
+        <Action>
+          <fromAction>HTMLInvokeJavascriptMethod</fromAction>
+          <toAction>WebInvokeJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLInsertJavascriptFragment</fromAction>
+          <toAction>WebInjectJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLNavigate</fromAction>
+          <toAction>WebNavigate</toAction>
+          <ArgumentIds>
+            <ArgumentId>
+              <fromArgumentId>NewText</fromArgumentId>
+              <toArgumentId>newtext</toArgumentId>
+            </ArgumentId>
+          </ArgumentIds>
+          <toActionArguments>
+            <Argument>newtext</Argument>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
         </Action>
       </Actions>
       <ReadActions>
@@ -538,8 +643,50 @@
           </toActionArguments>
         </Action>
         <Action>
+          <fromAction>HTMLFocus</fromAction>
+          <toAction>WebFocus</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLFocus</fromAction>
+          <toAction>WebFocus</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
           <fromAction>Verify</fromAction>
           <toAction>Verify</toAction>
+        </Action>
+        <Action>
+          <fromAction>HTMLInvokeJavascriptMethod</fromAction>
+          <toAction>WebInvokeJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLInsertJavascriptFragment</fromAction>
+          <toAction>WebInjectJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLNavigate</fromAction>
+          <toAction>WebNavigate</toAction>
+          <ArgumentIds>
+            <ArgumentId>
+              <fromArgumentId>NewText</fromArgumentId>
+              <toArgumentId>newtext</toArgumentId>
+            </ArgumentId>
+          </ArgumentIds>
+          <toActionArguments>
+            <Argument>newtext</Argument>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
         </Action>
       </Actions>
       <ReadActions>
@@ -635,6 +782,16 @@
           </toActionArguments>
         </Action>
         <Action>
+          <fromAction>SelectItem</fromAction>
+          <toAction>WebSelectListItem</toAction>
+          <Function>SelectItem</Function>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+            <Argument>itemtext</Argument>
+            <Argument>itemindex</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
           <fromAction>HTMLDoubleClickCentre</fromAction>
           <toAction>WebDoubleClick</toAction>
           <toActionArguments>
@@ -642,8 +799,43 @@
           </toActionArguments>
         </Action>
         <Action>
+          <fromAction>HTMLFocus</fromAction>
+          <toAction>WebFocus</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
           <fromAction>Verify</fromAction>
           <toAction>Verify</toAction>
+        </Action>
+        <Action>
+          <fromAction>HTMLInvokeJavascriptMethod</fromAction>
+          <toAction>WebInvokeJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLInsertJavascriptFragment</fromAction>
+          <toAction>WebInjectJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLNavigate</fromAction>
+          <toAction>WebNavigate</toAction>
+          <ArgumentIds>
+            <ArgumentId>
+              <fromArgumentId>NewText</fromArgumentId>
+              <toArgumentId>newtext</toArgumentId>
+            </ArgumentId>
+          </ArgumentIds>
+          <toActionArguments>
+            <Argument>newtext</Argument>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
         </Action>
       </Actions>
       <ReadActions>
@@ -750,8 +942,43 @@
           </toActionArguments>
         </Action>
         <Action>
+          <fromAction>HTMLFocus</fromAction>
+          <toAction>WebFocus</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
           <fromAction>Verify</fromAction>
           <toAction>Verify</toAction>
+        </Action>
+        <Action>
+          <fromAction>HTMLInvokeJavascriptMethod</fromAction>
+          <toAction>WebInvokeJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLInsertJavascriptFragment</fromAction>
+          <toAction>WebInjectJavascript</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLNavigate</fromAction>
+          <toAction>WebNavigate</toAction>
+          <ArgumentIds>
+            <ArgumentId>
+              <fromArgumentId>NewText</fromArgumentId>
+              <toArgumentId>newtext</toArgumentId>
+            </ArgumentId>
+          </ArgumentIds>
+          <toActionArguments>
+            <Argument>newtext</Argument>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
         </Action>
       </Actions>
       <ReadActions>
@@ -837,15 +1064,15 @@
           </toActionArguments>
         </Action>
         <Action>
-          <fromAction>HTMLFocus</fromAction>
-          <toAction>WebFocus</toAction>
+          <fromAction>HTMLHover</fromAction>
+          <toAction>WebHover</toAction>
           <toActionArguments>
             <Argument>trackingid</Argument>
           </toActionArguments>
         </Action>
         <Action>
-          <fromAction>HTMLHover</fromAction>
-          <toAction>WebHover</toAction>
+          <fromAction>HTMLFocus</fromAction>
+          <toAction>WebFocus</toAction>
           <toActionArguments>
             <Argument>trackingid</Argument>
           </toActionArguments>

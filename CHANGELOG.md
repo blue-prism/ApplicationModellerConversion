@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file, from 25 Feb 2021
 
+## Changes made on 09 Mar 2021
+
+### Core Application
+
+The application has been updated to v1.3.0 to support the following feature:
+
+- Predict the most appropriate element type to use before conversion, to ensure the best match of existing actions, read actions as well as conditions post conversion. This works very well for actions or read actions that are no longer available in mapped element type as defined in the conversion rules files, but may exist in other element types. *Get Table [HTMLGetTable]* is one such example, as it is available in nearly all IE elements but only present in *Table (Web) [WebTable]* element. As a result of this change, the following conversion rules mismatches can be minimised if not completely eliminated:
+  - 'HTMLGetTable' is NOT processed due to lack of conversion rules
+  - 'HTMLSelectItem' is NOT processed due to lack of conversion rules
+  - 'SelectItem' is NOT processed due to lack of conversion rules
+- All IE to Chrome/Edge/Firefox Conversion rules files must be updated to fully take advantage of this feature.
+- The overall duration of the conversion processed by the tool may take longer than previous versions but it is expected to save a lot more time on devising manual intervention.
+
+### Conversion Rules Files
+
+The following changes have been made to the conversion rules files from IE to Chrome/Edge/Firefox for 6.3.0-6.8.x, as well as 6.9.x or above.
+
+- Added conversion rules to convert from *Focus [HTMLFocus], Invoke Javascript Function [HTMLInvokeJavascriptMethod], Insert Javascript Fragment [HTMLInsertJavascriptFragment]* and *Navigate [HTMLNavigate]* to all conversion rules files. Note that adding those rules will have no effect on direct conversion since they are largely not present in various IE element types. They are mainly used to provide necessary information to help the processing engine to select the best element type possible prior to conversion.
+- Added conversion rules to convert from *Select Item [SelectItem]* > *Web Select Item [WebSelectListItem]* for *HTML Combo Box [HTMLCombo]*. Note that adding those rules will have no effect on direct conversion since they are largely not present in various IE element types. They are mainly used to provide necessary information to help the processing engine to select the best element type possible prior to conversion.
+
+### Plugin
+
+- Changed SelectItem function so it can work with conversion *Select Item [SelectItem]* to *Web Select Item [WebSelectListItem]* for *HTML Combo Box [HTMLCombo]*.
+
 ## Changes made on 04 Mar 2021
 
 ### Core Application
