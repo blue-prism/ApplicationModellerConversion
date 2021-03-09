@@ -12,8 +12,8 @@ The application has been updated to v1.3.0 to support the following feature:
   - 'HTMLGetTable' is NOT processed due to lack of conversion rules
   - 'HTMLSelectItem' is NOT processed due to lack of conversion rules
   - 'SelectItem' is NOT processed due to lack of conversion rules
-- All IE to Chrome/Edge/Firefox Conversion rules files must be updated to fully take advantage of this feature.
-- The overall duration of the conversion processed by the tool may take longer than previous versions but it is expected to save a lot more time on devising manual intervention.
+- All IE to Chrome/Edge/Firefox Conversion rules files, as well as plugin DLL *BPAMConversionToolPlugin.dll* must be updated to fully take advantage of this feature.
+- The overall duration of the conversion process may take slightly longer as compared to previous versions, but it is expected to save a lot more time on devising manual workarounds post conversion.
 
 ### Conversion Rules Files
 
