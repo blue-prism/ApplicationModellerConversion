@@ -2,7 +2,7 @@
 
 ## No Conversion Rules - Blue Prism Function Gaps
 
-**Note that this list is not exhaustive.** 
+**Note that the following list is not exhaustive.** 
 
 | IE Element Type             | Modern Browser Element Type               | IE Action /  ReadAction / Condition                          | Condition                                    | Reason                                                       | v6.3.0 - v6.8.x | >= v6.9.0 |
 | --------------------------- | ----------------------------------------- | ------------------------------------------------------------ | -------------------------------------------- | ------------------------------------------------------------ | :-------------: | :-------: |
@@ -45,13 +45,13 @@
   - Conversion rules file before 6.9 does not perform any conversion if element type is TextArea.
   - Everything else converts to *Get Text [WebGetText]*, including all 6.3.0 - 6.8.x cases.
 - *SelectItem* function. 
-  - Conversion drops *Item Position* if *Item Text* exists.
-- Added *SetAttribute* function. 
-  - Attribute of "value" is converted to use *Get Text [WebGetText]*.
+  - Conversion drops value of argument *Item Position* if *Item Text* exists.
+- *SetAttribute* function. 
+  - If *value* of Attribute is set, it is converted to use action *Get Text [WebGetText]*.
   - Everything else converts to *Get Attribute [WebGetAttribute]*.
-- Added *SetRadioChecked* function, for HTML Radio Button.
+- *SetRadioChecked* function, for HTML Radio Button.
   - If *Set Checked [SetChecked]* has a value of True, it is converted to *Check Radio [WebCheckRadio]*.
   - Otherwise no conversion is performed.
-- Added *SetChecked* function, for HTML Check Box.
+- *SetChecked* function, for HTML Check Box.
   - If *Set Checked [SetChecked]* has a value of True, it is converted to *Set Attribute [WebSetAttribute]*, with attribute value set to "checked".
   - Otherwise no conversion is performed.
