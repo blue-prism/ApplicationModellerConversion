@@ -1,8 +1,8 @@
 # Limitations on Browser Conversions
 
-## No Conversion Rules - Blue Prism Function Gaps
+## No Conversion Rules - Modern browser mode limitations
 
-**Note that the following list is not exhaustive.** 
+The following list highlights areas where modern browser modes have yet to deliver equivalent functionalities as the IE mode. **Note that the following list is not exhaustive.** 
 
 | IE Element Type             | Modern Browser Element Type               | IE Action /  ReadAction / Condition                          | Condition                                    | Reason                                                       | v6.3.0 - v6.8.x | >= v6.9.0 |
 | --------------------------- | ----------------------------------------- | ------------------------------------------------------------ | -------------------------------------------- | ------------------------------------------------------------ | :-------------: | :-------: |

@@ -19,9 +19,9 @@ For all changes made since 25 Feb 2021, see **change log** [here](https://github
 
 Browsers sometimes render the same web page differently. Such differences are especially obvious between Internet Explorer (IE) and what we consider as modern browsers, e.g., Chrome/Edge/Firefox. It is like web developers must come up with different code to work with different browsers, adjustments are often needed to cater for such differences when it comes to conversions. It is not the goal of this tool to attempt work around this limitation. It is one of those external factors that is not within the control of Blue Prism, nor the tool itself.
 
-### Blue Prism Function Gaps
+### Modern Browser Mode Limitations
 
-There exists function gaps between capability of Blue Prism IE mode and the implementation of Chrome/Edge/Firefox browser mode using different Blue Prism versions. For example, version 6.9.0 introduced *Get HTML* as well as *Get Current Value* actions that were not available in versions of Blue Prism before that. This means not every action, readaction or condition in IE mode has a match in Chrome/Edge/Firefox mode. The tool has attempted to bridge such gaps as much as possible but there is limitation in what any tool can do in situations like this. From the perspective of the tool, 6.3.0 - 6.8.x may receive less conversions as compared to 6.9.0 or above.
+There exists limitations between capabilities of Blue Prism IE mode and the implementation of Chrome/Edge/Firefox browser mode using different Blue Prism versions. For example, version 6.9.0 introduced *Get HTML* as well as *Get Current Value* actions that were not available in versions of Blue Prism before that. This means not every action, readaction or condition in IE mode has a match in Chrome/Edge/Firefox mode. The tool has attempted to close such gaps as much as possible but there is limitation in what any tool can do in situations like this. From the perspective of the tool, 6.3.0 - 6.8.x may receive less conversions as compared to 6.9.0 or above.
 
 The way how Blue Prism Attach/Detach work is also different than in IE mode. This may mean developers would need to consider revamping some of the existing code to work with the new versions.
 
