@@ -7,7 +7,7 @@ The current version of the application is [**v1.3.0**]((https://github.com/blue-
 
 For **current limitations** of browser conversions using the tool, please see [here](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/BROWSER.md).
 
-You may wish to read [this blog article](https://community.blueprism.com/blogs/bruce-liu1/2020/09/20/accelerating-your-migration-away-from-the-internet?CommunityKey=1e516cfe-4d1f-4de9-a9eb-58d15bf38c81) to understand the background why this application was created in the first place, and things you should be aware of.
+You may wish to watch [this blog video](https://community.blueprism.com/blogs/bruce-liu1/2021/03/31/browser-migration) (published on 31st March 2021) to gain a better understanding on the topic of browser migration using Blue Prism.
 
 **User Guide** can be found in [here](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Blue%20Prism%20User%20Guide%20-%20Application%20Modeller%20Conversion%20Tool.pdf). It is highly recommended that you read it carefully before commencing work with the tool.
 
