@@ -25,7 +25,7 @@ Browsers sometimes render the same web page differently. Such differences are es
 
 ### Modern Browser Mode Limitations
 
-There exists limitations between capabilities of Blue Prism IE mode and the implementation of Chrome/Edge/Firefox browser mode using different Blue Prism versions. For example, version 6.9.0 introduced *Get HTML* as well as *Get Current Value* actions that were not available in versions of Blue Prism before that. This means not every action, read action or condition in IE mode has a match in Chrome/Edge/Firefox mode. The tool has attempted to close such gaps as much as possible but there is limitation in what any tool can do in situations like this. From the perspective of the tool, 6.3.0 - 6.8.x may receive less conversions as compared to 6.9.x - 6.10.0.
+There exists limitations between capabilities of Blue Prism IE mode and the implementation of Chrome/Edge/Firefox browser mode using different Blue Prism versions. For example, version 6.9.0 introduced *Get HTML* as well as *Get Current Value* actions that were not available in versions of Blue Prism before that. This means not every action, read action or condition in IE mode has a match in Chrome/Edge/Firefox mode. The tool has attempted to close such gaps as much as possible but there is limitation in what any tool can do in situations like this. From the perspective of the tool, 6.3.0 - 6.8.x may receive less conversions as compared to 6.9.0 - 6.10.0.
 
 The way how Blue Prism Attach/Detach work is also different than in IE mode. This may mean developers would need to consider revamping some of the existing code to work with the new versions.
 
