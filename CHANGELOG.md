@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file, from 25 Feb 2021
 
+## Changes made on 07 Apr 2021
+
+### Core Application
+
+- No change made
+
+### Conversion Rules Files
+
+The following changes have been made to the conversion rules files from IE to Chrome/Edge/Firefox for 6.9.x:
+
+- Read Action 'IsConnected' is now set to 'WebIsConnected' for Application element; trackingid is added to the Read Action.
+- File is now renamed from ***ConversionRules_IE-ChromeEdgeFirefox_6.9.x.xml*** to ***ConversionRules_IE-ChromeEdgeFirefox_6.9.0-6.10.0.xml***, as it is no longer compatible with Blue Prism v6.10.1.
+- BPVersion attribute found within the file is also updated to reflect the change.
+
+A new conversion rules file is added to cover conversion from IE to Chrome/Edge/Firefox for 6.10.1 or above:
+
+- ***ConversionRules_IE-ChromeEdgeFirefox_6.10.1.xml***
+
+### Plugin
+
+- No change made
+
 ## Changes made on 09 Mar 2021
 
 ### Core Application
@@ -45,7 +67,7 @@ Please update all IE to Chrome/Edge/Firefox conversion rules files as well as th
 
 ### Conversion Rules Files
 
-The following changes have been made to conversion rules file rom IE to Chrome/Edge/Firefox for 6.3.0-6.8.x as well as 6.9.x or above. The rules have been customised to offer a more precise conversion solution for various Blue Prism versions.
+The following changes have been made to conversion rules files from IE to Chrome/Edge/Firefox for 6.3.0-6.8.x as well as 6.9.x or above. The rules have been customised to offer a more precise conversion solution for various Blue Prism versions.
 
 - Replaced all instances of *Get HTML Identifier [GetHTMLIdentifier]* action to *Get Attribute [WebGetAttribute]* action with Function *SetAttribute*, for all IE based elements, for all Blue Prism versions.
 - Replaced all instances of *Get Current Value [ReadCurrentValue]* action to *Get Text [WebGetText]* action with Function *SetText*, for all IE based elements, for all Blue Prism versions. 
