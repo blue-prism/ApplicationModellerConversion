@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file, from 25 Feb 2021
 
+## Changes made on 14 Apr 2021
+
+### Core Application
+
+- No change made
+
+### Conversion Rules Files
+
+The following changes have been made to the conversion rules files from IE to Chrome/Edge/Firefox for 6.10.1 or above:
+
+- Action 'Terminate' is now mapped to 'WebCloseApplication' for Application element; trackingid is added to the Action.
+
+The following changes have been made to the conversion rules files from IE to Chrome/Edge/Firefox for 6.9.0-6.10.0:
+
+- Action 'Terminate' is now mapped to 'WebCloseApplication' for Application element; trackingid is added to the Action.
+
+### Plugin
+
+- No change made
+
 ## Changes made on 07 Apr 2021
 
 ### Core Application
@@ -12,7 +32,7 @@ All notable changes to this project will be documented in this file, from 25 Feb
 
 The following changes have been made to the conversion rules files from IE to Chrome/Edge/Firefox for 6.9.x:
 
-- Read Action 'IsConnected' is now set to 'WebIsConnected' for Application element; trackingid is added to the Read Action.
+- Read Action 'IsConnected' is now mapped to 'WebIsConnected' for Application element; trackingid is added to the Read Action.
 - File is now renamed from ***ConversionRules_IE-ChromeEdgeFirefox_6.9.x.xml*** to ***ConversionRules_IE-ChromeEdgeFirefox_6.9.0-6.10.0.xml***, as it is no longer compatible with Blue Prism v6.10.1.
 - BPVersion attribute found within the file is also updated to reflect the change.
 

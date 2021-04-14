@@ -1186,7 +1186,10 @@
         </Action>
         <Action>
           <fromAction>Terminate</fromAction>
-          <toAction>Terminate</toAction>
+          <toAction>WebCloseApplication</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
         </Action>
       </Actions>
       <ReadActions>
