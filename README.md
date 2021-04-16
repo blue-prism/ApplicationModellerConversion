@@ -7,6 +7,8 @@ On 07 April, [a new conversion rules file](https://github.com/blue-prism/Applica
 
 For all changes made since 25 Feb 2021, see **change log** [here](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/CHANGELOG.md).
 
+**Please ensure you have Blue Prism set to <u>*English*</u> language before generating "Application Manager Operations.html" file.**
+
 ## Important Collateral
 
 For **current limitations** of browser conversions using the tool, please see [here](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/BROWSER.md).
