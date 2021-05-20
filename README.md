@@ -3,7 +3,7 @@ The Blue Prism Application Modeller Conversion Tool has been designed to allow q
 
 The current version of the application is [**v1.3.0**]((https://github.com/blue-prism/ApplicationModellerConversion/blob/master/BP_AM_Converter.zip)) (published on 09 March 2021). V1.3.0 has added predictive logic for element types to ensure the best match for actions, read actions and conditions set in the code post conversion. In a testing dataset, over ***one third*** of total errors relating to "'XXX' is not processed due to lack of conversion rules" that were present in earlier versions were completely eliminated. Other gaps are largely associated with known function gaps between Blue Prism IE mode and modern browser modes that are not going to be benefited from the tool. It is recommended that existing users of all previous versions to upgrade to this version. 
 
-On 07 April, [a new conversion rules file](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_IE-ChromeEdgeFirefox_6.10.1.xml) is added to cover Blue Prism versions from 6.10.1 or above.
+On 07 April, [a new conversion rules file](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_IE-ChromeEdgeFirefox_6.10.1.xml) is added to provide support for Blue Prism versions from ***6.10.1*** or above, including ***[Blue Prism 7.0](https://portal.blueprism.com/product/blue-prism-enterprise/blue-prism-7)*** which was released on 18 May 2021.
 
 For all changes made since 25 Feb 2021, see **change log** [here](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/CHANGELOG.md).
 
