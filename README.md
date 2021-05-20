@@ -1,6 +1,12 @@
 # Blue Prism Application Modeller Conversion Tool
 The Blue Prism Application Modeller Conversion Tool has been designed to allow quick conversion of application modeller elements and attributes. The principal audience for this utility is those wishing to convert objects from Internet Explorer to Chrome, Firefox or Edge Chromium browsers, but it also has the scope to support customized conversions between other application modes.
 
+On 19 May 2021, Microsoft has finally announced the end of life for IE: 
+
+> The Internet Explorer 11 desktop application will be retired and go out of support on ***June 15, 2022***, for certain versions of Windows 10". 
+
+For more information, please see https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/
+
 The current version of the application is [**v1.3.0**]((https://github.com/blue-prism/ApplicationModellerConversion/blob/master/BP_AM_Converter.zip)) (published on 09 March 2021). V1.3.0 has added predictive logic for element types to ensure the best match for actions, read actions and conditions set in the code post conversion. In a testing dataset, over ***one third*** of total errors relating to "'XXX' is not processed due to lack of conversion rules" that were present in earlier versions were completely eliminated. Other gaps are largely associated with known function gaps between Blue Prism IE mode and modern browser modes that are not going to be benefited from the tool. It is recommended that existing users of all previous versions to upgrade to this version. 
 
 On 07 April, [a new conversion rules file](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_IE-ChromeEdgeFirefox_6.10.1.xml) is added to provide support for Blue Prism versions from ***6.10.1*** or above, including ***[Blue Prism 7.0](https://portal.blueprism.com/product/blue-prism-enterprise/blue-prism-7)*** which was released on 18 May 2021.
@@ -62,7 +68,7 @@ For conversion of Blue Prism objects created using Internet Explorer mode to Chr
 For conversion of Blue Prism objects created using Internet Explorer mode to Chrome/Edge/Firefox modes. This conversion rules file converts Blue Prism objects or release files to format that is compatible with Blue Prism version 6.9.0 to 6.10.0. It is suitable if your target Blue Prism environment is between 6.9.0 to 6.10.0.
 
 ### [ConversionRules_IE-ChromeEdgeFirefox_6.10.1.xml](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_IE-ChromeEdgeFirefox_6.10.1.xml)
-For conversion of Blue Prism objects created using Internet Explorer mode to Chrome/Edge/Firefox modes. This conversion rules file converts Blue Prism objects or release files to format that is compatible with Blue Prism version 6.10.1 onwards. It is suitable if your target Blue Prism environment is 6.10.1 or above.
+For conversion of Blue Prism objects created using Internet Explorer mode to Chrome/Edge/Firefox modes. This conversion rules file converts Blue Prism objects or release files to format that is compatible with Blue Prism version 6.10.1 onwards. It is suitable if your target Blue Prism environment is 6.10.1 or above, including ***Blue Prism v7.0***.
 
 ### [ConversionRules_AA-UIA_6.3.x.xml](https://github.com/blue-prism/ApplicationModellerConversion/blob/master/Conversion%20Rules%20Files/ConversionRules_AA-UIA_6.3.x.xml)
 For conversion of Blue Prism objects from Active Accessibility (AA) to UI Automation (UIA). Such objects or releases must have gone through conversion into Chrome/Edge/Firefox mode from IE. This conversion rules file supports all Blue Prism versions from v6.3.0 onwards where Chrome mode firstly became available. For more details please see below.
