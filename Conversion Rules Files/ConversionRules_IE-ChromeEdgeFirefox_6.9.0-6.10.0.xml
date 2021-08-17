@@ -650,13 +650,6 @@
           </toActionArguments>
         </Action>
         <Action>
-          <fromAction>HTMLFocus</fromAction>
-          <toAction>WebFocus</toAction>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
-        </Action>
-        <Action>
           <fromAction>Verify</fromAction>
           <toAction>Verify</toAction>
         </Action>
