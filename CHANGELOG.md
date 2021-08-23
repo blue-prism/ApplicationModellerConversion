@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file, from 25 Feb 2021
 
+## Changes made on 23 Aug 2021
+
+### Core Application
+
+The application has been updated to v1.3.1 to support the following feature:
+
+- Allow access to AppTypeInfoId value post conversion to action and read action conversion functions. This allows the value of 'Is Connected' read action to set to 'IsConnected' when attaching and 'WebIsConnected' when launching.
+
+### Conversion Rules Files
+
+The following changes have been made to the conversion rules files from IE to Chrome/Edge/Firefox for 6.10.1 or above:
+
+- A function SetIsConnected is now set on to support correct conversion of 'Is Connected' read action.
+- Removed all toActionArguments from all conditions; those arguments did not have any effect on conditions.
+
+The following changes have been made to the conversion rules files from IE to Chrome/Edge/Firefox for 6.9.0-6.10.0:
+
+- Removed all toActionArguments from all conditions; those arguments did not have any effect on conditions. 
+
+### Plugin
+
+- AppTypeInfoId value post conversion is added to all action and read action conversion functions.
+- A function 'SetIsConnected' is added on to support correct conversion of 'Is Connected' read action. 
+- 'SetRadioChecked' and 'SetChecked' functions now consider Flag value with double quotes around the value *true*.
+
 ## Changes made on 14 Apr 2021
 
 ### Core Application

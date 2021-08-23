@@ -226,23 +226,14 @@
         <Condition>
           <fromCondition>CheckExists</fromCondition>
           <toCondition>WebCheckExists</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>DocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
       </Conditions>
       <Actions>
@@ -348,23 +339,14 @@
         <Condition>
           <fromCondition>CheckExists</fromCondition>
           <toCondition>WebCheckExists</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>DocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
       </Conditions>
       <Actions>
@@ -478,23 +460,14 @@
         <Condition>
           <fromCondition>CheckExists</fromCondition>
           <toCondition>WebCheckExists</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>DocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
       </Conditions>
       <Actions>
@@ -608,23 +581,14 @@
         <Condition>
           <fromCondition>CheckExists</fromCondition>
           <toCondition>WebCheckExists</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>DocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
       </Conditions>
       <Actions>
@@ -638,6 +602,13 @@
         <Action>
           <fromAction>HTMLDoubleClickCentre</fromAction>
           <toAction>WebDoubleClick</toAction>
+          <toActionArguments>
+            <Argument>trackingid</Argument>
+          </toActionArguments>
+        </Action>
+        <Action>
+          <fromAction>HTMLFocus</fromAction>
+          <toAction>WebFocus</toAction>
           <toActionArguments>
             <Argument>trackingid</Argument>
           </toActionArguments>
@@ -737,23 +708,14 @@
         <Condition>
           <fromCondition>CheckExists</fromCondition>
           <toCondition>WebCheckExists</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>DocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
       </Conditions>
       <Actions>
@@ -900,23 +862,14 @@
         <Condition>
           <fromCondition>CheckExists</fromCondition>
           <toCondition>WebCheckExists</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>DocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
       </Conditions>
       <Actions>
@@ -1022,23 +975,14 @@
         <Condition>
           <fromCondition>CheckExists</fromCondition>
           <toCondition>WebCheckExists</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>DocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
         <Condition>
           <fromCondition>HTMLCheckExistsAndDocumentLoaded</fromCondition>
           <toCondition>WebCheckParentDocumentLoaded</toCondition>
-          <toActionArguments>
-            <Argument>trackingid</Argument>
-          </toActionArguments>
         </Condition>
       </Conditions>
       <Actions>

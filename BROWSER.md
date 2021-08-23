@@ -52,8 +52,8 @@ The following list highlights areas where modern browser modes have yet to deliv
   - If *value* of Attribute is set, it is converted to use action *Get Text [WebGetText]*.
   - Everything else converts to *Get Attribute [WebGetAttribute]*.
 - *SetRadioChecked* function, for HTML Radio Button.
-  - If *Set Checked [SetChecked]* has a value of True, it is converted to *Check Radio [WebCheckRadio]*.
+  - If *Set Checked [SetChecked]* has a value of True or "True" (case insensitive) , it is converted to *Check Radio [WebCheckRadio]*.
   - Otherwise no conversion is performed.
 - *SetChecked* function, for HTML Check Box.
-  - If *Set Checked [SetChecked]* has a value of True, it is converted to *Set Attribute [WebSetAttribute]*, with attribute value set to "checked".
+  - If *Set Checked [SetChecked]* has a value of True or "True" (case insensitive), it is converted to *Set Attribute [WebSetAttribute]*, with attribute value set to "checked".
   - Otherwise no conversion is performed.
