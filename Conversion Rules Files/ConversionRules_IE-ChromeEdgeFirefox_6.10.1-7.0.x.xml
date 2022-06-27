@@ -1,4 +1,4 @@
-<ConversionRules Name="IE to Chrome/Edge/Firefox Browser Conversion Rules" BPVersion="6.10.1 or above" ObjectNameSuffix=" - Chrome">
+<ConversionRules Name="IE to Chrome/Edge/Firefox Browser Conversion Rules" BPVersion="6.10.1 - 7.0.x" ObjectNameSuffix=" - Chrome">
   <AppTypeInfoConversionRules>
     <IDs>
       <ID>

@@ -1,6 +1,28 @@
 # Change Log
 
-All notable changes to this project will be documented in this file, from 25 Feb 2021
+All notable changes to this project will be documented in this file, from 25 Feb 2021.
+
+## Changes made on 27 Jun 2022
+
+### Core Application
+
+- No change made.
+
+### Conversion Rules Files
+
+The following changes have been made to the conversion rules files from IE to Chrome/Edge/Firefox for 6.10.1 or above:
+
+- File is now renamed from ***ConversionRules_IE-ChromeEdgeFirefox_6.10.1.xml*** to ***ConversionRules_IE-ChromeEdgeFirefox_6.10.1-7.0.x.xml***, as it is no longer compatible with Blue Prism 7.1.x or above.
+- BPVersion attribute found within the file is also updated to reflect the change.
+- Removed 'HTMLGetSelectedItemsText' to 'WebGetSelectedItemsText' action conversion as it is not valid, nor in use.
+
+A new conversion rules file is added to cover conversion from IE to Chrome/Edge/Firefox for 7.1.0 or above:
+
+- ***ConversionRules_IE-ChromeEdgeFirefox_7.1.x.xml***. Please update the plugin **BPAMConversionToolPlugin.dll** to the latest to take advantage of the conversion rules file.
+
+### Plugin
+
+- A new function 'SelectItemV71' is added on to support correct conversion of 'Select Item' action that has been updated in 7.1.0. It has the ability to support *Item Value* argument. Function 'SelectItem' is still retained to support conversion rules files created for versions of Blue Prism before 7.1.0.
 
 ## Changes made on 23 Aug 2021
 
@@ -31,7 +53,7 @@ The following changes have been made to the conversion rules files from IE to Ch
 
 ### Core Application
 
-- No change made
+- No change made.
 
 ### Conversion Rules Files
 
@@ -45,13 +67,13 @@ The following changes have been made to the conversion rules files from IE to Ch
 
 ### Plugin
 
-- No change made
+- No change made.
 
 ## Changes made on 07 Apr 2021
 
 ### Core Application
 
-- No change made
+- No change made.
 
 ### Conversion Rules Files
 
@@ -67,7 +89,7 @@ A new conversion rules file is added to cover conversion from IE to Chrome/Edge/
 
 ### Plugin
 
-- No change made
+- No change made.
 
 ## Changes made on 09 Mar 2021
 
@@ -171,7 +193,7 @@ The following functions have been modified:
 
 ### Core Application
 
-- No change made
+- No change made.
 
 ### Conversion Rules Files
 
@@ -186,4 +208,4 @@ It is strongly recommended that you update your local conversion rules files.
 
 ### Plugin
 
-- No change made
+- No change made.
