@@ -21,7 +21,7 @@ The following section summaries the usage of different utilities on the DX for m
 
 - **Application Modeller Conversion Tool**: converting from IE object to modern browser equivalent (i.e., Google Chrome, Firefox or Microsoft Edge Chromium), or other Application Modeller conversions.
 
-- **[IE Mode Conversion Assistant](https://digitalexchange.blueprism.com/)**: converting from IE object to run under Microsoft Edge IE Mode only.
+- **[IE Mode Conversion Assistant](https://digitalexchange.blueprism.com/dx/entry/3439/solution/ie-mode-conversion-assistant)**: converting from IE object to run under Microsoft Edge IE Mode only.
 
 ## Important Collateral
 
